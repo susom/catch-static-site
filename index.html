@@ -87,7 +87,7 @@
 <meta name="keywords" content="covid 19 test bay area,covid test bay area,catch study,stanford catch study,stanford covid test,at home covid 19 test kit cost,covid 19 home screening test kit,book covid 19 home test kit,covid 19 home test kit,covid 19 test,covid 19 test kit,covid 19 test kit at home,covid 19 test kit near me,Covid testing near me,free covid testing near me,">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <link rel="apple-touch-icon" href="logo192.png">
-<link rel="manifest" href="manifest.json">
+<!--<link rel="manifest" href="manifest.json" crossorigin="use-credentials">-->
 <title>CATCH Study | Stanford Medicine</title>
 <link href="package.css" rel="stylesheet">
 <link href="main.css" rel="stylesheet">
@@ -97,13 +97,16 @@
 </head>
 <body>         
 <style>
-@media only screen and (max-width: 1440px){
   .hpStockThree {
-      background-image: url(street_grid_bg.png);
+    background-image: url('street_grid_bg.png');
+    background-size: contain;
+
   }
-}
+  @media only screen and (max-width: 1440px){
+
+  }
 .vera_homekit{
-  background: url(pic_vera_homekit.png) 70% 0% no-repeat;
+  background: url('pic_vera_homekit.png') 70% 0% no-repeat;
   background-size:contain;
 }
 .about-pics{
@@ -123,10 +126,19 @@
   }
 
   .hdr_img img {
-    max-height:30px !important
+    max-height:10px !important;
   }
 
   h1{ font-size:160% }
+}
+
+@media only screen and (max-width: 812px) {
+  .hdr_img img {
+    max-width: 30% !important;
+    max-height: 40px;
+
+
+  }
 }
 
 </style>     
@@ -248,7 +260,7 @@
             </div>
           </div>
           <div class="col-sm-12 row justify-content-center">
-            <div class="col-sm-12 mb-4 col-md-5 offset-md-2">
+            <div class="col-sm-6 offset-sm-3 mb-4 col-md-5 offset-md-2">
               <h6>CATCH Study Core Team</h6>
               <ul style="margin:0; padding:0 0 0 20px;">
                 <li>Alyssa Hayashi</li>
@@ -263,7 +275,7 @@
                 <li>Winnie Subramaniam</li>
               </ul>
             </div>
-            <div class="col-sm-12 col-md-5">
+            <div class="col-sm-6 offset-sm-3 col-md-4 offset-md-1">
               <h6>Advisors</h6>
               <ul style="margin:0; padding:0 0 0 20px;">
                 <li>Jeff Raikes</li>
@@ -291,7 +303,7 @@
 <!--                  <img src="stanford.svg" class="mr-2" style="height: 30px;">-->
 <!--                  <img src="vera-icon.svg" class="mr-2" style="height: 30px;">-->
 <!--                  <img class="mr-2" src="catch-study.svg" alt="CATCH Study" style="height: 30px;">-->
-                  <img src="vera-cdt.svg" style="height: 30px;">
+                  <img src="vera-cdt.svg" style="height: 40px;">
                 </span>
               </div>
 
@@ -303,14 +315,16 @@
           <div class="d-block d-sm-none">
             <div class="row">
               <div class="col-12 mb-3 mt-2 text-center">
-                <a href="/">
-                  <img src="stanford.svg" class="mr-2" style="height: 30px;">
+<!--                <a href="/">-->
+<!--                  <img src="stanford.svg" class="mr-2" style="height: 40px;">-->
                   <!--                  <img src="vera-icon.svg" class="mr-2" style="height: 30px;">-->
                   <!--                  <img src="catch-study.svg" alt="CATCH Study" style="height: 30px;">-->
-                  <img src="vera-cdt.svg" style="height: 40px;">
-                </a>
+                  <img src="vera-cdt.svg" style="height: 30px;">
+<!--                </a>-->
               </div>
-              <div class="col-12 text-center">© 2021 Stanford University/Chan Zuckerberg Biohub</div>
+              <div class="col-12 text-center">
+                © 2021 Stanford University / Chan Zuckerberg Biohub  <a class=" pl-2 primary-blue font-weight-normal" href="privacy.html">Privacy Policy</a>.
+              </div>
             </div>
           </div>
         </div>
